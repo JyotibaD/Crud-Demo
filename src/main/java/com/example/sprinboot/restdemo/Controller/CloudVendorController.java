@@ -28,7 +28,7 @@ public class CloudVendorController {
     @PostMapping
     public String createCloudVendorDetails(@RequestBody CloudVendor cloudVendor){
         cloudVendorService.createCloudVendor(cloudVendor);
-        return "Cloud Vendor details created successfully..";
+        return "Cloud Vendor created successfully..";
     }
 
     @PutMapping
@@ -40,7 +40,7 @@ public class CloudVendorController {
     @DeleteMapping("{vendorId}")
     public String deleteCloudVendorDetails(@PathVariable("vendorId") String vendorId){
         cloudVendorService.deleteCloudVendor(vendorId);
-        return "Cloud Vendor details deleted successfully..";
+        return "Cloud Vendor deleted successfully..";
     }
 
 

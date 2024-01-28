@@ -28,7 +28,7 @@ public class CloudVendorController {
     @PostMapping
     public String createCloudVendorDetails(@RequestBody CloudVendor cloudVendor){
         cloudVendorService.createCloudVendor(cloudVendor);
-        return "Cloud Vendor created successfully..";
+        return "Cloud Vendor created successfully....";
     }
 
     @PutMapping
